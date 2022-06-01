@@ -27,7 +27,7 @@ function lib:CreateWindow(name)
 
 
     MainFrame.Name = "MainFrame"
-    MainFrame.Parent = ScreenGui
+    MainFrame.Parent = LegoHaxxLib
     MainFrame.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
     MainFrame.Position = UDim2.new(0.21349448, 0, 0.228840128, 0)
     MainFrame.Size = UDim2.new(0, 569, 0, 346)
