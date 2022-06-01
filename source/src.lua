@@ -28,7 +28,7 @@ function lib:CreateWindow(name)
     local check = game.CoreGui.FindFirstChild("LegoHaxxLib")
 
     if check then
-        LegoHaxxLib:Destroy
+        LegoHaxxLib:Destroy()
     end
 
     MainFrame.Name = "MainFrame"
