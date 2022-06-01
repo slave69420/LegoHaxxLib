@@ -25,11 +25,6 @@ function lib:CreateWindow(name)
     LegoHaxxLib.Parent = game.CoreGui
     LegoHaxxLib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-    local check = game.CoreGui.FindFirstChild("LegoHaxxLib")
-
-    if check then
-        LegoHaxxLib:Destroy()
-    end
 
     MainFrame.Name = "MainFrame"
     MainFrame.Parent = ScreenGui
