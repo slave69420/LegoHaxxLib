@@ -130,7 +130,7 @@ function lib:CreateWindow(name)
     ScrollingFrameContainer.Name = "ScrollingFrameContainer"
     ScrollingFrameContainer.Parent = MainFrame
     ScrollingFrameContainer.BackgroundColor3 = Color3.fromRGB(51, 51, 51)
-    ScrollingFrameContainer.Position = UDim2.new(0.0781694055, 0, 0.130574226, 0)
+    ScrollingFrameContainer.Position = UDim2.new(0.0781694055, 0, 0.162366122, 0)
     ScrollingFrameContainer.Size = UDim2.new(0, 518, 0, 294)
 
     UICorner_4.CornerRadius = UDim.new(0, 3)
