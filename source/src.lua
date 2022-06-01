@@ -1,7 +1,7 @@
 local lib = {}
 
 function lib:CreateWindow(name)
-    local ScreenGui = Instance.new("ScreenGui")
+    local LegoHaxxLib = Instance.new("ScreenGui")
     local MainFrame = Instance.new("Frame")
     local UICorner = Instance.new("UICorner")
     local TopBar = Instance.new("Frame")
@@ -22,8 +22,14 @@ function lib:CreateWindow(name)
     local UIListLayout = Instance.new("UIListLayout")
     local bar = Instance.new("Frame")
 
-    ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-    ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+    LegoHaxxLib.Parent = game.CoreGui
+    LegoHaxxLib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+    local check = game.CoreGui.FindFirstChild("LegoHaxxLib")
+
+    if check then
+        LegoHaxxLib:Destroy
+    end
 
     MainFrame.Name = "MainFrame"
     MainFrame.Parent = ScreenGui
