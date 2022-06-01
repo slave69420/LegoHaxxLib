@@ -1,11 +1,3 @@
-
-
-
-
---Properties:
-
-
-
 local lib = {}
 
 function lib:CreateWindow(name)
@@ -27,6 +19,8 @@ function lib:CreateWindow(name)
     local ImageButton_7 = Instance.new("ImageButton")
     local ScrollingFrameContainer = Instance.new("Frame")
     local UICorner_4 = Instance.new("UICorner")
+    local UIListLayout = Instance.new("UIListLayout")
+    local bar = Instance.new("Frame")
 
     ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
     ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
@@ -36,6 +30,12 @@ function lib:CreateWindow(name)
     MainFrame.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
     MainFrame.Position = UDim2.new(0.21349448, 0, 0.228840128, 0)
     MainFrame.Size = UDim2.new(0, 569, 0, 346)
+
+    bar.Name = "bar"
+    bar.Parent = MainFrame
+    bar.BackgroundColor3 = Color3.fromRGB(51, 51, 51)
+    bar.Position = UDim2.new(0.0781694055, 0, 0.155554295, 0)
+    bar.Size = UDim2.new(0, 518, 0, 4)
 
     UICorner.CornerRadius = UDim.new(0, 3)
     UICorner.Parent = MainFrame
@@ -135,6 +135,12 @@ function lib:CreateWindow(name)
 
     UICorner_4.CornerRadius = UDim.new(0, 3)
     UICorner_4.Parent = ScrollingFrameContainer
+
+    UIListLayout.Parent = ScrollingFrameContainer
+    UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+    UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+    UIListLayout.Padding = UDim.new(0, 10)
+
 
     local cool = {}
 
