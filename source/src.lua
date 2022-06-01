@@ -1,7 +1,7 @@
 
 local lib = {}
 
-function createlib(name)
+function lib:CreateWindow(name)
     local ScreenGui = Instance.new("ScreenGui")
     local MainFrame = Instance.new("Frame")
     local UICorner = Instance.new("UICorner")
@@ -66,7 +66,7 @@ function createlib(name)
     TextLabel.Position = UDim2.new(0.318918914, 0, 0.14285709, 0)
     TextLabel.Size = UDim2.new(0, 200, 0, 19)
     TextLabel.Font = Enum.Font.Gotham
-    TextLabel.Text = "LegoHaxx v0.0.1A"
+    TextLabel.Text = name
     TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
     TextLabel.TextSize = 14.000
 
@@ -110,3 +110,5 @@ function createlib(name)
     return tab;
 end
 return lib;
+
+
